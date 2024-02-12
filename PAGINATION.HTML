@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pagination</title>
+        <style>
+
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+
+            }
+            body{
+                line-height: 1px;
+            }
+
+            .pagination {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap:10px;
+                width: 800px;
+                margin: 100px auto;
+            }
+            .page-num{
+                height: 30px;
+                width: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .page-num:hover{
+                border-radius: 50%;
+                background-color:green;
+                display: flex;
+                cursor: pointer;
+            }
+
+            .btn {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                border:2px solid green;
+                display: flex;
+                background-color: #fff;
+                justify-content: center;
+                align-items: center;
+
+                
+            }
+
+            .btn-icon{
+                stroke: #087f5b;
+                height: 30px;
+                width: 30px;
+            }
+            
+            .btn:hover, .btn-icon:hover {
+                background-color: green;
+                stroke: black;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="pagination">
+            <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="btn-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>
+
+            </button>
+                <div class="page-num">1</div>
+                <div class="page-num">2</div>
+                <div class="page-num">3</div>
+                <div class="page-num">4</div>
+                <div class="page-num">5</div>
+                <div class="page-num">6</div>
+                <div >...</div>
+                <div class="page-num">23</div>
+            <button class="btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    class="btn-icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+        </div>
+
+    </body>
+
+</html>
